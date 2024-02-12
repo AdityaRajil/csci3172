@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h2>Form</h2>
+    <form id="Form">
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+        </div>
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+        </div>
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="genderMale" name="gender" value="male">
+            <label for="genderMale">Male</label><br>
+            <input type="radio" id="genderFemale" name="gender" value="female">
+            <label for="genderFemale">Female</label><br>
+            <input type="radio" id="genderNonBinary" name="gender" value="non-binary">
+            <label for="genderNonBinary">Non-binary</label><br>
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+                <option value="India">India</option>
+                <option value="Mexico">Mexico</option>
+                <option value="UK">UK</option>
+                <option value="Australia">Australia</option>
+                <option value="Germany">Germany</option>
+                <option value="China">China</option>
+            </select>
+        </div>
+        <div>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </div>
+    </form>
+    <div id="displayData"></div>
+</body>
+</html>
